@@ -14,7 +14,7 @@ p = Perceptron(X, d, 0.1, BinaryStep)
 p.train()
 
 xplot = np.arange(-2,3,0.5)
-yplot = list(map(lambda x: -1 * (p.W[0]/p.W[1]) * x + (p.theta/p.W[1]),xplot))
+yplot = list(map(lambda x: -1 * (p.W[1]/p.W[2]) * x + (p.W[0]/p.W[2]),xplot))
 
 
 plt.plot(xplot,yplot)
